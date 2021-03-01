@@ -10,9 +10,7 @@ namespace LatinThesaurus
         static void Main(string[] args)
         {
             // Base URL of Web API
-            var client1 = new RestClient("https://latinwordnet.exeter.ac.uk/api/");
-            var client2 = new RestClient("https://latinwordnet.exeter.ac.uk/api/");
-
+            var client = new RestClient("https://latinwordnet.exeter.ac.uk/api/");
 
             string lemma;
 
@@ -26,12 +24,32 @@ namespace LatinThesaurus
             // HTTP Request object
             RestRequest searchByLemmaRequest = new RestRequest($"lemmas/{lemma}/synsets", Method.GET);
             // HTTP Response object
-            IRestResponse<SearchByLemmaResponse> sblr = client1.Execute<SearchByLemmaResponse>(searchByLemmaRequest);
+            IRestResponse<SearchByLemmaResponse> sblr = client.Execute<SearchByLemmaResponse>(searchByLemmaRequest);
 
             /* Disambiguation */
+            Word chosen;
+            if (sblr.Data.Results.Count > 1)
+            {
+                int wordCount = 0;
+                Console.WriteLine("\n\nThere are multiple words with this lemma; please choose:\n");
+                foreach (Word word in sblr.Data.Results)
+                {
+                    wordCount++;
+                    Console.WriteLine($"{wordCount}: {word.Lemma}, {word.Morpho}, {word.Synsets.Literal[0].Gloss}");
+                }
+                Console.Write("\n>> ");
+                string lemmaChoice = Console.ReadLine();
+                int choiceIndex = Int32.Parse(lemmaChoice) - 1;
+
+                chosen = sblr.Data.Results[choiceIndex];
+            }
+            else
+            {
+                chosen = sblr.Data.Results[0];
+            }
 
             // Once correct word is chosen, list synsets ; user chooses desired synset
-            Word toThesaurize = sblr.Data.Results[0];
+            Word toThesaurize = chosen;
             SynsetType literalMetonymicMetaphoric = toThesaurize.Synsets;
             int count = 0;
 
@@ -50,7 +68,7 @@ namespace LatinThesaurus
 
             /* Return all synonyms (words in that synset) */
             RestRequest getLatinSynonymsRequest = new RestRequest($"synsets/*/{selectedSynset.Offset}/lemmas", Method.GET);
-            IRestResponse<GetLatinSynonymsResponse> glsr = client2.Execute<GetLatinSynonymsResponse>(getLatinSynonymsRequest);
+            IRestResponse<GetLatinSynonymsResponse> glsr = client.Execute<GetLatinSynonymsResponse>(getLatinSynonymsRequest);
 
             List<Word> synonyms = glsr.Data.Results[0].Lemmas.Literal;
 
