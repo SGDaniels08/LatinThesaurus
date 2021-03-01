@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "uIxeAi7fD0zgjuBaKVQfqc0YA5HNgvPz31/xWRmeUCqiebUlYbnUlxoUscbcXs/IbIcwWVFLZF4V39x5+OO1OA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\SGDan\\Desktop\\Code\\LatinThesaurus\\LatinThesaurus\\LatinThesaurus.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\SGDan\\.nuget\\packages\\restsharp\\106.11.7\\restsharp.106.11.7.nupkg.sha512"
+  ],
+  "logs": []
+}

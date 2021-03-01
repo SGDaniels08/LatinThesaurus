@@ -1,0 +1,15 @@
+C:\Users\SGDan\Desktop\Code\LatinThesaurus\LatinThesaurus\bin\Debug\netcoreapp3.1\LatinThesaurus.exe
+C:\Users\SGDan\Desktop\Code\LatinThesaurus\LatinThesaurus\bin\Debug\netcoreapp3.1\LatinThesaurus.deps.json
+C:\Users\SGDan\Desktop\Code\LatinThesaurus\LatinThesaurus\bin\Debug\netcoreapp3.1\LatinThesaurus.runtimeconfig.json
+C:\Users\SGDan\Desktop\Code\LatinThesaurus\LatinThesaurus\bin\Debug\netcoreapp3.1\LatinThesaurus.runtimeconfig.dev.json
+C:\Users\SGDan\Desktop\Code\LatinThesaurus\LatinThesaurus\bin\Debug\netcoreapp3.1\LatinThesaurus.dll
+C:\Users\SGDan\Desktop\Code\LatinThesaurus\LatinThesaurus\bin\Debug\netcoreapp3.1\LatinThesaurus.pdb
+C:\Users\SGDan\Desktop\Code\LatinThesaurus\LatinThesaurus\bin\Debug\netcoreapp3.1\RestSharp.dll
+C:\Users\SGDan\Desktop\Code\LatinThesaurus\LatinThesaurus\obj\Debug\netcoreapp3.1\LatinThesaurus.csprojAssemblyReference.cache
+C:\Users\SGDan\Desktop\Code\LatinThesaurus\LatinThesaurus\obj\Debug\netcoreapp3.1\LatinThesaurus.AssemblyInfoInputs.cache
+C:\Users\SGDan\Desktop\Code\LatinThesaurus\LatinThesaurus\obj\Debug\netcoreapp3.1\LatinThesaurus.AssemblyInfo.cs
+C:\Users\SGDan\Desktop\Code\LatinThesaurus\LatinThesaurus\obj\Debug\netcoreapp3.1\LatinThesaurus.csproj.CoreCompileInputs.cache
+C:\Users\SGDan\Desktop\Code\LatinThesaurus\LatinThesaurus\obj\Debug\netcoreapp3.1\LatinThesaurus.csproj.CopyComplete
+C:\Users\SGDan\Desktop\Code\LatinThesaurus\LatinThesaurus\obj\Debug\netcoreapp3.1\LatinThesaurus.dll
+C:\Users\SGDan\Desktop\Code\LatinThesaurus\LatinThesaurus\obj\Debug\netcoreapp3.1\LatinThesaurus.pdb
+C:\Users\SGDan\Desktop\Code\LatinThesaurus\LatinThesaurus\obj\Debug\netcoreapp3.1\LatinThesaurus.genruntimeconfig.cache
